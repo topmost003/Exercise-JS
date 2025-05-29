@@ -1,10 +1,10 @@
 let box = document.getElementById(`box`)
 let add = document.getElementById(`add`)
-let reset = document.getElementById(`reset`)
+let resetbtn = document.getElementById(`reset`)
 let decrease = document.getElementById(`decrease`)
 
 let count = 0;
-box.textContent = count
+// box.textContent = count
 
 function plus(){
     count++;
@@ -17,7 +17,7 @@ function minus(){
 
 }
 
-function res(){
+function reset(){
     count = 0;
   box.innerText = count;
-}
+} 
