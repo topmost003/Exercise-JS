@@ -30,7 +30,8 @@
 
 
 function submit(){
-let score = document.getElementById(`input`).value
+let score = document.getElementById(`input`)
+ score = score.value
 
 switch(true){
  case score >= 80 :
@@ -54,9 +55,8 @@ switch(true){
   document.getElementById(`grade`).innerText = "F"
  break;
  default : 
- alert(`enter a valid number`)
+ alert(`enter valid number`)
 break;
-
 }
 
 }
